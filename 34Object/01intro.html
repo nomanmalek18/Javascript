@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web pafe title  -->
+    <title>Object introduction</title>
+    <!-- link stylesheet CSS -->
+    <link rel="stylesheet" href="../StyleFile/style.css">
+    <!-- favicon link page  -->
+    <link rel="shortcut icon" href="../image/js.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- main container  -->
+    <div class="container">
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="../image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <!-- container-items -->
+        <div class="container-items">
+            <h2>Object</h2>
+            <p>
+                The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer, literal syntax. 
+            </p>
+            <p>
+                JavaScript object is a non-primitive data-type that allows you to store multiple collections of data.
+            </p>
+
+            <h3>Creating Objects in JavaScript</h3>
+            <p>There are 3 ways to create objects.
+            </p>
+            <ul>
+                <li>object literal</li>
+                <li>creating instance of Object directly (using new keyword)</li>
+                <li>using an object constructor (using new keyword)</li>
+            </ul>
+
+
+            <h3>1: JavaScript object literal</h3>
+
+            <div class="object-example-1">
+                <h3>The syntax of creating object using object literal is given below:</h3>
+                <div class="object-example-1-code">
+                    let UserDetailsObject = { <br> 
+                        FName: "Noman", <br>
+                        LName: "Malek", <br>
+                        MName: "Aashik", <br>
+                        Gender: "Male", <br>
+                        Location: "Ahmedabad",<br> 
+                        Mobile: "9879879878",<br> 
+                        Rank: 1, <br>
+                        Status: true <br>
+                    } <br> <br>
+                    console.log(UserDetailsObject); <br>
+                </div>
+            </div>
+
+            <div class="object-example-1-output">
+                <h3>output:</h3>
+                <div class="object-example-1-output-code">
+                    { FName: "Noman", LName: "Malek", MName: "Aashik", Gender: "Male", Location: "Ahmedabad", Mobile: "9879879878", Rank: 1, Status: true } 
+                </div>
+            </div>
+
+
+            <h3>creating instance of Object directly (using new keyword)</h3>
+
+            <div class="object-example-2">
+                <h3>The syntax of creating object directly is given below:</h3>
+                <div class="object-example-2-code">
+                    let userObject = new Object();<br>
+                    userObject.FName = "Noman";<br>
+                    userObject.age = 22;<br>
+                    userObject.Gender = "Male",<br>
+                    userObject.Location = "Ahmedabad"<br>
+                    <br>
+                    console.log(userObject);<br>
+
+                </div>
+            </div>
+            <div class="object-example-2-output">
+                <h3>output:</h3>
+                <div class="object-example-2-output-code">
+                    {FName: 'Noman', age: 22, Gender: 'Male', Location: 'Ahmedabad'}
+                </div>
+            </div>
+
+            <h3>using an object constructor (using new keyword)</h3>
+            <div class="object-example-3">
+                    <h3>The example of defining method in object is given below.</h3>
+                <div class="object-example-3-code">
+                    function UserDetails(id,name,salary){  <br>
+                        this.id=id;  <br>
+                        this.name=name;  <br>
+                        this.salary=salary;  <br>
+                        }  <br>
+                        UserDetailsData=new UserDetails(1820,"Noman",30000); <br> 
+                        <br>
+                        console.log(UserDetailsData);<br>
+    
+                </div>
+            </div>
+
+            <div class="object-example-3-output">
+                <h3>output:</h3>
+                <div class="object-example-3-output-code">
+                    UserDetails {id: 1820, name: 'Noman', salary: 30000}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
